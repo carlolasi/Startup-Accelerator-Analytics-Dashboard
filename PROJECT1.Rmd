@@ -1,0 +1,66 @@
+---
+title: "Global VC Accelerator Forecasting Project"
+output: html_notebook
+
+Project Overview
+
+This project is focused on analyzing and forecasting the growth of global Venture Capital (VC) accelerators. We aim to gain insights into the distribution and focus of these accelerators and use predictive models to forecast future trends. The project involves cleaning and processing data, creating visualizations, and applying forecasting techniques.
+
+Key Features:
+  
+Data Cleaning and Preprocessing: Handling missing values and preparing the dataset.
+Data Visualization: Understanding the patterns and distribution of accelerators across different regions.
+Forecasting: Using time series models to predict future growth trends in the accelerator ecosystem.
+Evaluation Metrics: Assessing the model's performance with metrics like MAE, MSE, RMSE, and MAPE.
+
+Dataset Description
+The dataset provides information about global VC accelerators, including:
+
+Name: Name of the accelerator or venture capital firm.
+Type: Type of the entity (e.g., Venture Capital, Accelerator, Corporate VC).
+Location: Geographical location of the accelerator.
+Focus Area: The industry sectors the accelerator focuses on.
+Notable Investments/Programs: Important investments or startup programs associated with the accelerator.
+The dataset was preprocessed by filling missing values in Location and Focus Area with the most frequent values. A simulated Year column was added to perform time series forecasting.
+
+Project Workflow
+1. Data Cleaning
+Missing values in Location and Focus Area were filled using the mode (most frequent value).
+A Year column was simulated to analyze trends over time.
+2. Data Visualization
+Visualizations were created to explore the geographical distribution of accelerators:
+
+A bar plot shows the distribution of accelerators by location, allowing us to see which countries or regions have the highest concentration of accelerators.
+3. Forecasting Models
+The following models were used for time series forecasting:
+
+Exponential Smoothing: Used to capture trends and forecast the number of accelerators over time.
+ARIMA (AutoRegressive Integrated Moving Average): Used to capture autoregressive and moving average patterns in the time series.
+Both models were applied to predict the future growth of accelerators for the next 5 years.
+
+Evaluation Metrics
+The performance of the forecasting models was evaluated using the following metrics:
+
+MAE (Mean Absolute Error): Measures the average magnitude of the errors between forecasted and actual values.
+MSE (Mean Squared Error): Measures the average of the squared differences between forecasted and actual values.
+RMSE (Root Mean Squared Error): Square root of the MSE, providing error measurement in the same units as the original data.
+MAPE (Mean Absolute Percentage Error): Measures the percentage error in the forecast.
+Forecast Accuracy: Calculated as 100 - MAPE to give an estimate of how accurate the forecast is.
+Installation and Requirements
+Requirements:
+  
+The following R libraries are required to run the project:
+
+tidyverse
+forecast
+ggplot2
+
+Conclusion
+
+This project analyzes and forecasts the growth of Venture Capital accelerators using data analysis, visualization, and predictive modeling techniques. By applying Exponential Smoothing and ARIMA models, we predict the future development of accelerators globally and assess the accuracy of these models using key error metrics.
+
+
+
+
+
+
